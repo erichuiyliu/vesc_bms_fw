@@ -422,6 +422,15 @@ static THD_FUNCTION(if_thd, p) {
 
 float bms_if_get_i_in(void) {
 	printf("this is a test");
+	int middle,a,b,c;
+
+    if ((a <= b) && (a <= c)) {
+        middle = (b <= c) ? b : c;
+    } else if ((b <= a) && (b <= c)) {
+        middle = (a <= c) ? a : c;
+    } else {
+        middle = (a <= b) ? a : b;
+    }
 	return m_i_in_filter;
 }
 
