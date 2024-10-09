@@ -421,6 +421,7 @@ static THD_FUNCTION(if_thd, p) {
 }
 
 float bms_if_get_i_in(void) {
+	printf("this is a test");
 	return m_i_in_filter;
 }
 
